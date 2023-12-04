@@ -1,0 +1,144 @@
+.weight-tracker-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #d6e3f7;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.weight-tracker-header {
+  text-align: center;
+  color: #4fa8e6; 
+  animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.weight-tracker-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  animation: fadeInUp 1s ease-in-out; 
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.weight-tracker-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  animation: scaleIn 1s ease-in-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.weight-tracker-container button {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4fa8e6; 
+  color: #fff;
+  transition: background-color 0.3s ease;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.weight-tracker-container button:hover {
+  background-color: #368db3;
+  animation: shake 0.5s ease-in-out; 
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.weight-tracker-container p {
+  text-align: center;
+  margin-top: 16px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out; 
+}
+
+.weight-tracker-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.weight-tracker-container li {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideInLeft 1s ease-in-out; 
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,115 @@
+.container {
+    background-color: #87CEFA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+.container h2 {
+    color: #3366cc; 
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+    transform: translateY(-20px);
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.container p {
+    color: #555; 
+    animation: fadeInUp 1s ease-in-out; 
+}
+
+@keyframes fadeInUp {
+    from {
+    transform: translateY(20px);
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.container button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from {
+    transform: translateX(20px);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.container button:hover {
+    background-color: #45a049; 
+}
+
+.container button:last-child {
+    margin-right: 0;
+}
+
+.container button[type="submit"] {
+    background-color: #008CBA;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #0077a3; 
+}
+
+.container input {
+    width: 200px;
+    padding: 8px;
+    margin-right: 8px;
+    animation: fadeInLeft 1s ease-in-out; 
+}
+
+@keyframes fadeInLeft {
+    from {
+    transform: translateX(-20px);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.container .success-message {
+    color: #008CBA; 
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.container .date-details {
+    color: #777;
+    margin-bottom: 10px;
+}

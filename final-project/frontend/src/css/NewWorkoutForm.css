@@ -1,0 +1,129 @@
+.new-workout-form-container {
+    background-color: #87CEFA; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out; 
+}
+
+@keyframes fadeInUp {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.new-workout-form-container h2 {
+    color: #003366; 
+    animation: fadeInDown 1s ease-in-out; 
+}
+
+@keyframes fadeInDown {
+    from {
+    opacity: 0;
+    transform: translateY(-20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.new-workout-form-container form {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+.new-workout-form-container label {
+    font-weight: bold;
+    color: #003366; 
+    animation: fadeInLeft 1s ease-in-out; 
+}
+
+@keyframes fadeInLeft {
+    from {
+    opacity: 0;
+    transform: translateX(-20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.new-workout-form-container input,
+.new-workout-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    animation: fadeInRight 1s ease-in-out; 
+}
+
+@keyframes fadeInRight {
+    from {
+    opacity: 0;
+    transform: translateX(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.new-workout-form-container button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+.new-workout-form-container button:hover {
+    background-color: #45a049; 
+}
+
+.new-workout-form-container button,
+.new-workout-form-container a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.new-workout-form-container button:last-child {
+    margin-right: 0;
+}
+
+.new-workout-form-container button,
+.new-workout-form-container textarea,
+.new-workout-form-container input {
+    font-size: 16px;
+}
