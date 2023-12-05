@@ -11,8 +11,8 @@ const mongoOptions = {
     useUnifiedTopology: true,
 };
 
-router.post('/log-weight', async (req, res) => {
-    const { email, date, weight } = req.body;
+router.post('/set-goal', async (req, res) => {
+    const { email, goal } = req.body;
 
     let client;
 
@@ -28,22 +28,20 @@ router.post('/log-weight', async (req, res) => {
             return res.status(404).json({ status: 404, message: 'User not found' });
         }
 
-        const newWeightLog = { date, weight };
-
         await accountsCollection.updateOne(
             { _id: email },
-            { $push: { 'profile.weightLogs': newWeightLog } }
+            { $set: { 'profile.goal': goal } }
         );
 
         const updatedUserData = await accountsCollection.findOne({ _id: email });
 
         return res.status(201).json({
             status: 201,
-            message: 'Weight logged successfully',
+            message: 'Goal set successfully',
             user: updatedUserData,
         });
     } catch (err) {
-        console.error('Error logging weight:', err.stack);
+        console.error('Error setting goal:', err.stack);
         return res.status(500).json({
             status: 500,
             message: 'Internal server error',
@@ -57,7 +55,7 @@ router.post('/log-weight', async (req, res) => {
     }
 });
 
-router.get('/weight-logs/:email', async (req, res) => {
+router.get('/goal/:email', async (req, res) => {
     const { email } = req.params;
 
     let client;
@@ -74,11 +72,11 @@ router.get('/weight-logs/:email', async (req, res) => {
             return res.status(404).json({ status: 404, message: 'User not found' });
         }
 
-        const weightLogs = user.profile?.weightLogs || [];
+        const goal = user.profile?.goal || null;
 
-        res.status(200).json({ status: 200, weightLogs });
+        res.status(200).json({ status: 200, goal });
     } catch (error) {
-        console.error('Error fetching weight logs:', error.message);
+        console.error('Error fetching goal:', error.message);
         res.status(500).json({ status: 500, message: 'Internal server error', error: error.message });
     } finally {
         if (client) {
