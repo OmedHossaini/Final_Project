@@ -16,8 +16,6 @@ Welcome to the Workout Tracker App! This application allows users to track their
   - [Weight/BMI Graph](#weightbmi-graph)
   - [Goal Setting](#goal-setting)
 
-- [License](#license)
-
 ## Introduction
 
 The Workout Tracker App is designed to help users monitor and achieve their fitness goals by providing a platform to log workouts, manage profiles, and set personal targets.
@@ -65,8 +63,3 @@ The Workout Tracker App is designed to help users monitor and achieve their fitn
 ### Goal Setting
 
 - Users can set workout or weight goals.
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details.
