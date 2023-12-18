@@ -13,7 +13,6 @@ Welcome to the Workout Tracker App! This application allows users to track their
   - [Workout Logging](#workout-logging)
   - [Workout Management](#workout-management)
   - [Daily Weight Entry](#daily-weight-entry)
-  - [Weight/BMI Graph](#weightbmi-graph)
   - [Goal Setting](#goal-setting)
 
 ## Introduction
@@ -56,9 +55,6 @@ The Workout Tracker App is designed to help users monitor and achieve their fitn
 
 - Users can enter their daily weight in the profile.
 
-### Weight/BMI Graph
-
-- The site presents a graph to users showing the progression of their weight and BMI over time.
 
 ### Goal Setting
 
